@@ -12,9 +12,14 @@
     "dark": "/images/fav_dark.svg"
   },
   "navigation": {
-    "pages": [
-      "getting-started",
-      "seo"
+    "anchors": [
+      {
+        "anchor": "Project setting",
+        "pages": [
+          "getting-started",
+          "seo"
+        ]
+      }
     ]
   },
   "logo": {
