@@ -12,23 +12,14 @@
     "dark": "/images/icon.svg"
   },
   "navigation": {
-    "pages": [
+    "groups": [
       {
         "group": "Getting Started",
         "pages": [
           "index",
           "quickstart"
         ]
-      },
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      },
-      "quickstart",
-      "quickstart"
+      }
     ]
   },
   "logo": {
