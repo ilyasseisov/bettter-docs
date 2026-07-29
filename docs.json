@@ -8,8 +8,8 @@
     "dark": "#a8db00"
   },
   "favicon": {
-    "light": "/favicon.svg",
-    "dark": "/images/icon.svg"
+    "light": "/images/fav.svg",
+    "dark": "/images/fav_dark.svg"
   },
   "navigation": {
     "groups": [
@@ -23,8 +23,9 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/images/logo.svg"
+    "light": "/images/logo_light.svg",
+    "dark": "/images/logo.svg",
+    "href": "https://bettter.app/"
   },
   "navbar": {
     "links": [
