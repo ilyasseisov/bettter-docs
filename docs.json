@@ -12,11 +12,18 @@
     "dark": "/images/fav_dark.svg"
   },
   "navigation": {
-    "anchors": [
+    "groups": [
       {
-        "anchor": "Project setting",
+        "group": "uno",
+        "icon": "annoyed",
         "pages": [
-          "getting-started",
+          "getting-started"
+        ]
+      },
+      {
+        "group": "dos",
+        "icon": "aperture",
+        "pages": [
           "seo"
         ]
       }
@@ -67,8 +74,14 @@
     "strict": true
   },
   "fonts": {
-    "family": "Outfit",
-    "weight": 400
+    "heading": {
+      "family": "Outfit",
+      "weight": 700
+    },
+    "body": {
+      "family": "Outfit",
+      "weight": 400
+    }
   },
   "thumbnails": {
     "background": "/images/og_home.png"
