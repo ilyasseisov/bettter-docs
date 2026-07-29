@@ -12,14 +12,9 @@
     "dark": "/images/fav_dark.svg"
   },
   "navigation": {
-    "groups": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
+    "pages": [
+      "untitled-page",
+      "untitled-page-2"
     ]
   },
   "logo": {
