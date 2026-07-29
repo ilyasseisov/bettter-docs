@@ -50,7 +50,8 @@
       "mcp",
       "cursor",
       "vscode"
-    ]
+    ],
+    "display": "toc"
   },
   "background": {
     "color": {
