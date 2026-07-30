@@ -1,0 +1,104 @@
+---
+title: "Creating and managing projects"
+description: "Create, edit, open, and delete projects from the dashboard project list, and understand plan limits."
+sidebarTitle: "Creating projects"
+icon: "folder-plus"
+keywords: ["bettter", "create project", "dashboard", "delete project", "plan limits"]
+---
+
+The project list at [bettter.app/dashboard](https://bettter.app/dashboard) is your home base. From here you create projects, open settings, visit the public portal, and delete projects you no longer need.
+
+## Projects list
+
+The page title is **Projects**. Next to it you see two badges:
+
+- **Plan badge** — your plan name (`BASIC`, `PRO`, `MAX`) or `free` if you have not purchased a plan yet
+- **Count badge** — how many projects you have versus your limit, for example `1/1`, `3/5`, or `2/unlimited`
+
+Each project appears as a card showing its name, slug, and action buttons.
+
+## Create a project
+
+<Steps>
+  <Step title="Open the create panel">
+    Click **Add project** in the header. If you are on the free tier with no plan, you see **Upgrade plan now** instead — you must purchase a lifetime plan before creating projects.
+  </Step>
+  <Step title="Fill in Primary settings">
+    The **Create new project** panel opens. Under **Primary**, enter:
+
+    - **Name** — 1–32 characters (required)
+    - **Slug** — your subdomain prefix; the field shows `.bettter.app` as a suffix. Lowercase letters, numbers, and hyphens only.
+  </Step>
+  <Step title="Configure optional sections">
+    Expand any accordion sections you want to set now:
+
+    - **SEO** — website URL, SEO title, meta description
+    - **Branding** — brand color, theme, font, UI language (logo and favicon uploads are available after the project is created)
+    - **Support** — support email and descriptive message
+    - **Controls** — tab visibility, open for voting, comments, shared navigation
+  </Step>
+  <Step title="Create">
+    Click **Create**. The panel closes and the project list refreshes. You stay on `/dashboard` — Bettter does not automatically navigate into the new project.
+  </Step>
+</Steps>
+
+<Check>
+  Your portal is live at `{slug}.bettter.app` as soon as the project is created.
+</Check>
+
+## Plan limits
+
+<Info>
+  Each lifetime plan sets how many projects you can create:
+
+  | Plan | Projects |
+  |------|----------|
+  | Free (no plan) | 0 — upgrade required |
+  | Basic | 1 |
+  | Pro | 5 |
+  | Max | Unlimited |
+
+  When you reach your limit, **Add project** is disabled and the count badge shows your cap (for example `1/1`). Attempting to create another project returns the error **"Project limit reached for your plan."**
+</Info>
+
+See [pricing on the homepage](https://bettter.app/#pricing) for plan details.
+
+## Edit project settings
+
+Click the **Settings** (gear) icon on a project card to open the **Edit project** panel. The accordion sections are the same as during creation, with branding uploads now enabled.
+
+Make your changes, then click **Update**. The button stays disabled until something has changed. While saving, it shows **Updating…**.
+
+## Open the public portal
+
+There are two ways to preview what your customers see:
+
+- Click the **external-link icon** next to the project name on the project card
+- After opening a project, click **Open public portal** in the admin header
+
+Both open `{slug}.bettter.app` in a new browser tab.
+
+## Delete a project
+
+<Warning>
+  Deleting a project permanently removes all associated data — features, comments, changelog entries, and settings. This cannot be undone.
+</Warning>
+
+<Steps>
+  <Step title="Start deletion">
+    Click the **Trash** icon on the project card footer.
+  </Step>
+  <Step title="Confirm">
+    A dialog titled **Are you sure?** appears. It explains that deleting a project also deletes all data associated with it.
+  </Step>
+  <Step title="Type DELETE">
+    Enter `DELETE` in the confirmation field exactly as shown. The **Delete Project** button enables once the text matches.
+  </Step>
+  <Step title="Delete">
+    Click **Delete Project**. While deleting, the button shows **Deleting…**. If deletion fails, a **Deletion failed** banner appears.
+  </Step>
+</Steps>
+
+## Next
+
+Continue to [Dashboard overview](/getting-started/dashboard-overview) to learn how admin navigation works inside a project and what only you can see as the owner.

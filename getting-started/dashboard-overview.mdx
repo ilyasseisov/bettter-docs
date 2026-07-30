@@ -1,0 +1,114 @@
+---
+title: "Dashboard overview"
+description: "Navigate the owner dashboard — Features, Roadmap, Changelog, and Support — and understand owner-only capabilities."
+sidebarTitle: "Dashboard overview"
+icon: "layout-dashboard"
+keywords: ["bettter", "dashboard", "admin", "features", "roadmap", "pending"]
+---
+
+Once you open a project from `/dashboard`, you enter the owner admin area for that project. This is where you manage content, moderate suggestions, and preview what visitors will see on the public portal.
+
+## Entering a project
+
+Click a project card on the project list. You land on the **Features** board at:
+
+```
+/dashboard/[slug]
+```
+
+There is no separate Dashboard tab — Features is the default home for every project.
+
+## Header and navigation
+
+The admin header includes:
+
+- **Back** — returns to the project list at `/dashboard`
+- **Sign Out** — top right
+- **Project bar** — your project logo and name on a brand-colored rounded bar
+- **Open public portal** — opens `{slug}.bettter.app` in a new tab
+
+Below the header, a tab bar lets you switch between the four modules:
+
+| Tab | Route |
+|-----|-------|
+| Features | `/dashboard/[slug]` |
+| Roadmap | `/dashboard/[slug]/roadmap` |
+| Changelog | `/dashboard/[slug]/changelog` |
+| Support | `/dashboard/[slug]/support` |
+
+**Search** is available on Features, Roadmap, and Changelog — not on Support.
+
+On mobile, tabs show icons only. On larger screens, they show text labels.
+
+## What you can do in each tab
+
+<AccordionGroup>
+  <Accordion title="Features">
+    - Title: **Features**
+    - **Suggest new feature** with the full status picker (Pending, Open for voting, Planned, In development, Shipped)
+    - Filter by status: All, Pending, Open for voting, Planned, In development, Shipped
+    - Sort by most voted, least votes, newest, or oldest
+    - Click a card to open its detail page; use the edit pencil to update or delete
+    - Vote on features when voting is enabled
+  </Accordion>
+  <Accordion title="Roadmap">
+    - Title: **Roadmap**
+    - Three columns: **Planned**, **In Development**, **Shipped**
+    - Drag cards between columns to update their status (dashboard only)
+    - Pending and open-for-voting cards do not appear in roadmap columns
+  </Accordion>
+  <Accordion title="Changelog">
+    - **Add new log** to create entries with title, description, type, publish date, and optional image
+    - Click an entry to edit or delete it
+  </Accordion>
+  <Accordion title="Support">
+    - Title: **Support**
+    - Shows where tickets arrive: **Your support tickets arrive at {email}**
+    - If no support email is configured, tickets go nowhere until you set one in project settings
+  </Accordion>
+</AccordionGroup>
+
+## Owner vs public
+
+<Columns cols={2}>
+  <Card title="Owner dashboard" icon="shield">
+    Full control over content and settings. See pending features, edit any card, drag roadmap items, and publish changelog entries.
+  </Card>
+  <Card title="Public portal" icon="globe">
+    Read-only roadmap and changelog. Feature board without pending cards. Voting, suggesting, and commenting when enabled and signed in.
+  </Card>
+</Columns>
+
+| Capability | Owner | Public |
+|------------|-------|--------|
+| See pending features | Yes | No |
+| Edit or delete content | Yes | No |
+| Vote and comment | Yes, when enabled | Signed-in visitors, when enabled |
+| Roadmap drag-and-drop | Yes | Read-only columns |
+| Changelog CRUD | Yes | Read-only |
+| Support | View destination email | Submit ticket form |
+| Search | Features, Roadmap, Changelog | Features, Roadmap, Changelog |
+
+## Pending features
+
+<Note>
+  **Pending** features are visible only to you as the owner. They appear on your Features board (use the Pending filter) and on card detail pages in the dashboard. They are hidden everywhere on the public portal — the board, roadmap columns, and direct card URLs all exclude pending items.
+</Note>
+
+When **Open for voting** is turned off in Controls, new visitor suggestions go to **Pending** for your review. When it is on, suggestions appear on the board immediately as **Open for voting**. Full moderation details will be covered in the Manage content section (coming soon).
+
+## Disabled tabs
+
+If you turn off a tab in **Controls**, it disappears from the public portal navigation. Visitors who navigate to a disabled tab see:
+
+> The page is disabled by app owner ({projectName})
+
+You can also hide the entire navigation strip on the public portal with **Show shared tabs**.
+
+## Help
+
+A fixed **?** button in the bottom-right corner of every dashboard page links to the Bettter support portal.
+
+## Next
+
+You have completed the Getting started section. Return to the [documentation home](/) or continue exploring the [Bettter demo portal](https://bettter.bettter.app) to see a live example of what your customers will experience.
