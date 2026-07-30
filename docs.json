@@ -72,11 +72,11 @@
     "display": "header"
   },
   "navigation": {
-    "groups": [
+    "pages": [
+      "index",
       {
         "group": "1. Getting started",
         "pages": [
-          "index",
           "1.getting-started/1.1-introduction",
           "1.getting-started/1.2-what-is-a-project",
           "1.getting-started/1.3-creating-and-managing-projects",
