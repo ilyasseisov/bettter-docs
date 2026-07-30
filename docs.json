@@ -87,7 +87,8 @@
           "3.configure/3.6-custom-domain",
           "3.configure/3.7-widget",
           "3.configure/3.8-email-notifications"
-        ]
+        ],
+        "icon": "folder"
       },
       {
         "group": "4. Public portal",
