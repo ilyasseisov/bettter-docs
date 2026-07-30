@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Bettter",
   "colors": {
-    "primary": "#c7ff10",
-    "light": "#f9ffe4",
-    "dark": "#90bc00"
+    "primary": "#A8DB00",
+    "light": "#000000",
+    "dark": "#000000"
   },
   "favicon": {
     "light": "/images/fav.svg",
@@ -14,10 +14,17 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "uno",
+        "icon": "annoyed",
         "pages": [
-          "index",
-          "quickstart"
+          "getting-started"
+        ]
+      },
+      {
+        "group": "dos",
+        "icon": "aperture",
+        "pages": [
+          "seo"
         ]
       }
     ]
@@ -30,7 +37,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Contact support",
         "href": "https://bettter.bettter.app/support"
       }
     ],
@@ -55,7 +62,7 @@
   },
   "background": {
     "color": {
-      "light": "#fafafa",
+      "light": "#fcfcfc",
       "dark": "#606060"
     }
   },
@@ -67,11 +74,20 @@
     "strict": true
   },
   "fonts": {
-    "family": "Outfit",
-    "weight": 400
+    "heading": {
+      "family": "Outfit",
+      "weight": 700
+    },
+    "body": {
+      "family": "Outfit",
+      "weight": 400
+    }
   },
   "thumbnails": {
     "background": "/images/og_home.png"
   },
-  "description": "Bettter - feature board, roadmap, changelog and support. Build better products with instant feedback from your users."
+  "description": "Bettter - feature board, roadmap, changelog and support. Build better products with instant feedback from your users.",
+  "styling": {
+    "eyebrows": "section"
+  }
 }
