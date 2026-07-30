@@ -24,11 +24,6 @@
     "default": "system"
   },
   "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Get started",
-      "href": "https://bettter.app/sign-up"
-    },
     "links": [
       {
         "label": "Home",
@@ -99,9 +94,7 @@
           },
           {
             "group": "Roadmap",
-            "pages": [
-              "2.manage-content/2.7-moving-cards-with-drag-and-drop"
-            ]
+            "pages": ["2.manage-content/2.7-moving-cards-with-drag-and-drop"]
           },
           {
             "group": "Changelog",
@@ -113,9 +106,7 @@
           },
           {
             "group": "Support",
-            "pages": [
-              "2.manage-content/2.11-receiving-support-tickets"
-            ]
+            "pages": ["2.manage-content/2.11-receiving-support-tickets"]
           }
         ]
       },
