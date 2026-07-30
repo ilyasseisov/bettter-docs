@@ -8,6 +8,15 @@
     "light": "#e8ff8a",
     "dark": "#9acc00"
   },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://bettter.app/"
+  },
+  "favicon": {
+    "light": "/images/fav.svg",
+    "dark": "/images/fav_dark.svg"
+  },
   "icons": {
     "library": "lucide"
   },
@@ -24,6 +33,10 @@
       {
         "label": "Home",
         "href": "https://bettter.app"
+      },
+      {
+        "label": "Contact support",
+        "href": "https://bettter.bettter.app/support"
       }
     ]
   },
@@ -31,6 +44,32 @@
     "socials": {
       "website": "https://bettter.app"
     }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Outfit",
+      "weight": 700
+    },
+    "body": {
+      "family": "Outfit",
+      "weight": 400
+    }
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ],
+    "display": "header"
   },
   "navigation": {
     "groups": [
@@ -60,7 +99,9 @@
           },
           {
             "group": "Roadmap",
-            "pages": ["2.manage-content/2.7-moving-cards-with-drag-and-drop"]
+            "pages": [
+              "2.manage-content/2.7-moving-cards-with-drag-and-drop"
+            ]
           },
           {
             "group": "Changelog",
@@ -72,12 +113,15 @@
           },
           {
             "group": "Support",
-            "pages": ["2.manage-content/2.11-receiving-support-tickets"]
+            "pages": [
+              "2.manage-content/2.11-receiving-support-tickets"
+            ]
           }
         ]
       },
       {
         "group": "3. Configure",
+        "icon": "folder",
         "pages": [
           "3.configure/3.1-primary-settings",
           "3.configure/3.2-seo",
