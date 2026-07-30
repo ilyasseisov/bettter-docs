@@ -4,13 +4,13 @@
   "name": "Bettter",
   "description": "Documentation for Bettter — feature board, roadmap, changelog, and support in one lifetime-payment product.",
   "colors": {
-    "primary": "#c7ff10",
-    "light": "#e8ff8a",
+    "primary": "#9ccc00",
+    "light": "#9ccc00",
     "dark": "#9acc00"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
+    "light": "/images/logo_light.svg",
+    "dark": "/images/logo.svg",
     "href": "https://bettter.app/"
   },
   "favicon": {
@@ -21,7 +21,8 @@
     "library": "lucide"
   },
   "appearance": {
-    "default": "system"
+    "default": "system",
+    "strict": true
   },
   "navbar": {
     "links": [
