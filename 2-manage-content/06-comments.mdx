@@ -1,0 +1,63 @@
+---
+title: "Comments"
+description: "Enable comments on feature detail pages — create, like, and delete for signed-in users."
+sidebarTitle: "6. Comments"
+icon: "message-circle"
+keywords: ["bettter", "comments", "feature", "discussion"]
+---
+
+Comments let users discuss feature requests in detail. They appear on the **feature detail page only** — not on the board list (though the board may show a comment count icon when comments exist).
+
+## Enable comments
+
+The **Comments** toggle lives in project settings under [Controls](/3-configure/05-controls):
+
+> When disabled, visitors cannot post new comments on feature card detail pages. Existing comments remain visible.
+
+| Setting | New comments | Existing comments |
+|---------|-------------|-------------------|
+| ON (default) | Allowed for signed-in users | Visible |
+| OFF | Compose box hidden | Still visible |
+
+## Where comments appear
+
+Open any feature card to see the **Comments** section below the description and vote controls.
+
+| Element | Label |
+|---------|-------|
+| Section heading | Comments |
+| Compose placeholder | Write a comment... |
+| Submit button | Comment |
+| Empty state | No comments yet |
+| Like | Like comment / Unlike comment |
+| Delete | Delete comment (trash icon) |
+
+## Who can comment
+
+- **Signed-in visitors** can create, like, and delete their own comments
+- **Project owner** can delete any comment
+- **Unsigned visitors** see a sign-in prompt when trying to comment
+
+Comments must be 1–2000 characters.
+
+## Pending features
+
+Non-owners cannot comment on **Pending** features. If a visitor tries, they receive **"Cannot comment on pending cards"**. As the owner, you can still comment on pending features from the dashboard.
+
+## Comment actions
+
+<AccordionGroup>
+  <Accordion title="Create">
+    Type in the compose box and click **Comment**. Requires sign-in on the public portal.
+  </Accordion>
+  <Accordion title="Like">
+    Click the like button on any comment to toggle your like. Requires sign-in.
+  </Accordion>
+  <Accordion title="Delete">
+    Click the trash icon to delete. Authors can delete their own comments; the project owner can delete any comment.
+  </Accordion>
+</AccordionGroup>
+
+## Next
+
+Continue to [Moving cards with drag and drop](/2-manage-content/07-moving-cards-with-drag-and-drop) to update feature status from the Roadmap tab.

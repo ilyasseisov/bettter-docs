@@ -1,0 +1,50 @@
+---
+title: "Primary settings"
+description: "Set your project name and slug — the subdomain your public portal lives at."
+sidebarTitle: "1. Primary settings"
+icon: "settings-2"
+keywords: ["bettter", "primary settings", "name", "slug", "subdomain"]
+---
+
+Primary settings define your project's identity and public address. They live in the **Primary** accordion of the project settings panel.
+
+<Note>
+  Open the panel from `/dashboard` — click the gear icon on a project card to **Edit project**, or **Add project** when creating a new one.
+</Note>
+
+## Fields
+
+| Field | Label | Required | Details |
+|-------|-------|----------|---------|
+| Name | **Name** * | Yes | 1–32 characters. Placeholder: `"Enter project name (1–32 characters)"` |
+| Slug | **Slug** * | Yes | Subdomain prefix with `.bettter.app` suffix shown inline. Placeholder: `your-subdomain` |
+
+**Slug helper text:** Lowercase letters, numbers, and hyphens only.
+
+## Validation rules
+
+| Rule | Error message |
+|------|---------------|
+| Name empty | Name is required |
+| Name length | Name must be at least 1 character / Name must be 32 characters or less |
+| Slug empty | Slug cannot be empty |
+| Slug length | Slug must be 32 characters or less |
+| Slug format | Slug must contain only lowercase letters, numbers, and hyphens |
+
+Slugs are automatically lowercased as you type. Reserved slugs such as `www`, `dashboard`, and `docs` are blocked.
+
+If you choose a slug that already exists, Bettter returns **"A project with this slug already exists. Please choose a different slug."**
+
+## Your portal URL
+
+Once saved, your public portal is available at:
+
+```
+{slug}.bettter.app
+```
+
+Changing the slug updates your portal address. Update any bookmarks or embed scripts that reference the old URL.
+
+## Next
+
+Continue to [SEO](/3-configure/02-seo) to configure your website URL, browser tab title, and search result description.

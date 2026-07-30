@@ -1,0 +1,54 @@
+---
+title: "Editing a feature"
+description: "Update a feature's title, description, status, and expected delivery from the board or detail page."
+sidebarTitle: "2. Editing a feature"
+icon: "pencil"
+keywords: ["bettter", "feature", "edit", "update", "feature board"]
+---
+
+As the project owner, you can edit any feature request at any time. Visitors cannot edit features — they can only suggest new ones, vote, and comment.
+
+## Where to edit
+
+| Surface | How to open |
+|---------|-------------|
+| Features board | Click the pencil icon on a card (`Edit feature card`) |
+| Feature detail page | Click the pencil icon in the card header |
+
+Both open the **Edit Feature Request** dialog.
+
+## Editable fields
+
+| Field | Details |
+|-------|---------|
+| **Title** | 12–80 characters |
+| **Description** | Can be cleared on edit; if non-empty, must be 40–480 characters |
+| **Status** | Pending, Voting, Planned, In Dev, or Shipped |
+| **Expected delivery** | Available when status is Planned or In Dev |
+
+Placeholders match the create dialog: `"Enter feature title (12–80 characters)"` and `"Describe the feature... (40–480 characters)"`.
+
+## Save changes
+
+Click **Update** to save. The button is disabled until something has changed. While saving, it shows **Updating…**.
+
+If you try to save with no changes, Bettter shows **No changes detected**.
+
+<Note>
+  Only the project owner can edit features. Attempting to edit as a non-owner returns **"You don't have permission to edit this card"**.
+</Note>
+
+## Feature detail pages
+
+Each feature has a dedicated detail page with full description, vote count, and comments:
+
+| Context | URL |
+|---------|-----|
+| Owner dashboard | `/dashboard/[slug]/[cardSlug]` |
+| Public portal | `{slug}.bettter.app/[cardSlug]` |
+
+Editing from the detail page uses the same **Edit Feature Request** dialog as the board.
+
+## Next
+
+Continue to [Deleting a feature](/2-manage-content/03-deleting-a-feature) to remove a feature and all associated votes and comments.

@@ -1,0 +1,55 @@
+---
+title: "Moving cards with drag and drop"
+description: "Update feature status by dragging cards between Planned, In Development, and Shipped columns on the admin roadmap."
+sidebarTitle: "7. Moving cards with drag and drop"
+icon: "move"
+keywords: ["bettter", "roadmap", "drag and drop", "kanban", "status"]
+---
+
+The Roadmap tab gives you a kanban view of features in progress. On the **owner dashboard**, you can drag cards between columns to update their status. The public roadmap is read-only.
+
+## Admin vs public roadmap
+
+| | Admin dashboard | Public portal |
+|--|----------------|---------------|
+| Route | `/dashboard/[slug]/roadmap` | `{slug}.bettter.app/roadmap` |
+| Drag and drop | Yes | No (read-only columns) |
+| Vote buttons | Hidden | Hidden |
+
+## Three columns
+
+| Column | Status | Empty message |
+|--------|--------|---------------|
+| **Planned** | `planned` | No planned features |
+| **In Development** | `in-development` | No features in development |
+| **Shipped** | `shipped` | No shipped features |
+
+Only features with these three statuses appear on the roadmap. **Pending** and **Open for voting** cards stay on the Features board — move them to **Planned** or later to add them to the roadmap.
+
+## How to drag
+
+<Steps>
+  <Step title="Open the Roadmap tab">
+    Navigate to `/dashboard/[slug]/roadmap` from the tab bar.
+  </Step>
+  <Step title="Drag a card">
+    Click and hold a card, then drag it to a different column.
+  </Step>
+  <Step title="Drop to update status">
+    Release the card in the target column. Bettter updates the feature status automatically.
+  </Step>
+</Steps>
+
+<Check>
+  On success: **"Card has been successfully moved to {Planned|In Development|Shipped}"**
+</Check>
+
+If the move fails, you see **"Couldn't move card. Please try again."** or a server error message. Dragging within the same column does not persist — the card returns to its original position.
+
+## Alternative: edit dialog
+
+You can also change status from the **Edit Feature Request** dialog on the Features board or detail page. Drag-and-drop on the roadmap is the fastest way to move multiple items through your pipeline.
+
+## Next
+
+Continue to [Creating a changelog entry](/2-manage-content/08-creating-a-changelog-entry) to publish product updates on the Changelog tab.

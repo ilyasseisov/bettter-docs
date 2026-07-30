@@ -1,0 +1,49 @@
+---
+title: "Email notifications"
+description: "Configure notification email and toggles for new features, comments, and voter status updates."
+sidebarTitle: "8. Email notifications"
+icon: "bell"
+keywords: ["bettter", "email", "notifications", "alerts"]
+---
+
+Email notifications keep you and your users informed about activity on your portal. Open the **Email notifications** accordion in the project settings panel.
+
+<Note>
+  Email notification configuration requires an existing project. During creation, the notification email field is disabled with: *"You need to create a project first to configure email notifications."*
+</Note>
+
+## Notifications for you
+
+| Switch | Description | Default |
+|--------|-------------|---------|
+| **New feature suggestions** | Email me when someone submits a new feature on my board. | OFF |
+| **New comments** | Email me when someone leaves a comment on a feature card. | OFF |
+
+When either toggle is ON, a **Notification email** is required:
+
+- **Label:** Notification email
+- **Placeholder:** `you@example.com`
+- **Validation:** Please enter a valid email address
+- **Server error if missing:** Notification email is required when email notifications are enabled
+
+If unset, Bettter defaults to your account email.
+
+## Notifications for your users
+
+Under the subheading **Notifications for your users**:
+
+| Switch | Description | Default |
+|--------|-------------|---------|
+| **Roadmap status updates** | Email users who voted on a feature when its status changes to Planned, In development, or Shipped. | OFF |
+
+Voter notifications do not require a notification email address — they are sent to users who voted on the feature.
+
+## Tips
+
+- Enable **New feature suggestions** if you use **Open for voting** OFF and want to know when pending items arrive
+- Enable **Roadmap status updates** to automatically notify voters when you move features through your pipeline
+- Pair **New comments** with the [Comments](/2-manage-content/06-comments) toggle to stay on top of discussions
+
+## Next
+
+Continue to [How the public portal works](/4-public-portal/01-how-the-public-portal-works) to see what your configured portal looks like to visitors.

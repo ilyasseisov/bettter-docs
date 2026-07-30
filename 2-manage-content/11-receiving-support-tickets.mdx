@@ -1,0 +1,70 @@
+---
+title: "Receiving support tickets"
+description: "Configure a support email and receive visitor tickets from the public portal form."
+sidebarTitle: "11. Receiving support tickets"
+icon: "life-buoy"
+keywords: ["bettter", "support", "tickets", "email", "contact form"]
+---
+
+The Support module gives visitors a contact form on your public portal. Submissions are emailed to the support address you configure in project settings.
+
+## Dashboard Support tab
+
+Open the **Support** tab at `/dashboard/[slug]/support`. The page shows:
+
+- **Heading:** Support
+- **Body:** Your support tickets arrive at **{email}**
+
+If no support email is configured, the page shows **nowhere** instead of an email address — tickets cannot be delivered until you set one.
+
+## Configure support email
+
+In the project settings panel, expand the **Support** accordion:
+
+| Field | Details |
+|-------|---------|
+| **Email** | Destination address (placeholder: `support@example.com`). Marked optional in the form, but required to enable the Support tab |
+| **Descriptive message** | Text shown above the public support form (placeholder: `"How visitors can reach you or what to expect"`) |
+
+The **Support** tab toggle in **Controls** is blocked until a valid support email is entered.
+
+## Public support form
+
+Visitors submit tickets at `{slug}.bettter.app/support`:
+
+| Field | Label |
+|-------|-------|
+| Bug toggle | Reporting a bug? |
+| Name | Your Name * |
+| Email | Your Email * |
+| Subject | Subject * |
+| Message | Describe your issue as detailed as you can * |
+| Attachments | Screenshots (optional) — PNG/JPG, up to 3 images, 4 MB total |
+
+Submit button labels: **Submit Ticket**, **Report a bug**, or **Sending…** while in progress.
+
+On success, visitors see: **"Your message was sent. We will get back to you soon."**
+
+## Email delivery
+
+When a visitor submits a ticket, Bettter sends an email to your configured support address:
+
+- **From:** New Support Ticket (or New bug report for bug reports)
+- **Reply-To:** the submitter's email address
+- **Subject:** the visitor's subject line (max 200 characters)
+- **Body:** includes the submitter's name and message
+
+You can reply directly to the email to respond to the visitor.
+
+## Enable the Support tab
+
+To show Support on your public portal:
+
+1. Set a valid support email in project settings
+2. Enable the **Support** toggle in **Controls**
+
+If the Support tab is disabled, visitors see the standard disabled-page message.
+
+## Next
+
+You have completed Manage content. Continue to [Support settings](/3-configure/04-support-settings) to configure your support email and descriptive message.

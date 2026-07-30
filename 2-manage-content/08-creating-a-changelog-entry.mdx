@@ -1,0 +1,49 @@
+---
+title: "Creating a changelog entry"
+description: "Publish product updates with title, description, type, date, and an optional image."
+sidebarTitle: "8. Creating a changelog entry"
+icon: "scroll-text"
+keywords: ["bettter", "changelog", "create", "product updates"]
+---
+
+The Changelog tab lets you share product updates, bug fixes, and improvements with your users. Entries appear on both the admin dashboard and the public portal (read-only for visitors).
+
+## Where to create
+
+Open the **Changelog** tab at `/dashboard/[slug]/changelog` and click **Add new log**.
+
+## Dialog fields
+
+| Field | Required | Details |
+|-------|----------|---------|
+| **Title** | Yes | 12–160 characters. Placeholder: `"Enter log title (12–160 characters)"` |
+| **Description** | Yes | 40–4000 characters. Placeholder: `"Describe the changes... (40–4000 characters)"` |
+| **Type** | Yes | **New**, **Fix**, or **Improvement** (tab picker) |
+| **Date** | Yes | Calendar picker; defaults to today |
+| **Image** | No | PNG, JPEG, or WebP up to 5 MB. Recommended size: 720 × 480 pixels |
+
+Click **Cancel** to close, or **Create** to publish. While creating, the button shows **Creating…**.
+
+## Entry types
+
+| Type | Use for |
+|------|---------|
+| **New** | New features or capabilities |
+| **Fix** | Bug fixes and corrections |
+| **Improvement** | Enhancements to existing functionality |
+
+## Optional image
+
+Upload an image to accompany the entry. The upload dialog title is **Upload changelog image** with helper text:
+
+> Recommended size: 720 × 480 pixels. PNG, JPEG, or WebP up to 5 MB.
+
+Images appear on the changelog card in the timeline view.
+
+## Public changelog
+
+Visitors see all published entries on `{slug}.bettter.app/changelog` in read-only mode — they cannot create, edit, or delete entries.
+
+## Next
+
+Continue to [Editing a changelog entry](/2-manage-content/09-editing-a-changelog-entry) to update an existing entry.

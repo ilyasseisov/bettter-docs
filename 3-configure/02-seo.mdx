@@ -1,0 +1,37 @@
+---
+title: "SEO"
+description: "Configure website URL, browser tab title, and meta description for search results."
+sidebarTitle: "2. SEO"
+icon: "search"
+keywords: ["bettter", "seo", "meta description", "browser tab"]
+---
+
+SEO settings control how your portal appears in browser tabs and search engine results. All fields are optional — Bettter uses sensible defaults when left empty.
+
+Open the **SEO** accordion in the project settings panel.
+
+## Fields
+
+| Field | Label | Details |
+|-------|-------|---------|
+| Website | **Website** | Your site's public URL. Input shows a `https://` prefix; placeholder: `example.com`. Helper: *Optional. Your site's public URL* |
+| SEO title | **SEO title** | Browser tab title. Placeholder: `"Browser tab title (defaults to project name)"`. Helper: *Optional. Shown in the browser tab and search results*. Max 60 characters |
+| SEO meta description | **SEO meta description** | Search snippet text. Placeholder: `"Short summary for search results"`. Helper: *Optional. Shown in search results*. Max 320 characters |
+
+## Validation
+
+| Field | Error |
+|-------|-------|
+| Website (if set) | Please enter a valid URL (e.g. https://example.com) |
+| SEO title (if set) | SEO title must be 60 characters or less |
+| Meta description (if set) | SEO meta description must be 320 characters or less |
+
+Websites are normalized to `https://…` automatically. When set, a **Website link** badge appears in the public portal header.
+
+## Defaults
+
+If SEO title is empty, Bettter falls back to your project name. Meta description can remain empty — search engines will generate their own snippet from page content.
+
+## Next
+
+Continue to [Branding](/3-configure/03-branding) to customize colors, theme, fonts, language, and images.

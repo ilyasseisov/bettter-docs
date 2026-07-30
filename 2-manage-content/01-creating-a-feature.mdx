@@ -1,0 +1,67 @@
+---
+title: "Creating a feature"
+description: "Add feature requests from the dashboard or public portal — title, description, status, and expected delivery."
+sidebarTitle: "1. Creating a feature"
+icon: "lightbulb"
+keywords: ["bettter", "feature", "create", "suggest", "feature board"]
+---
+
+Feature requests live on the **Features** board. You and your visitors can suggest new features through the same **Suggest new feature** dialog — but what each person can set depends on whether they are the project owner or a signed-in visitor.
+
+## Where to create a feature
+
+| Context | Route |
+|---------|-------|
+| Owner dashboard | `/dashboard/[slug]` |
+| Public portal | `{slug}.bettter.app` |
+
+Click **Suggest new feature** on the Features board to open the dialog.
+
+## Dialog fields
+
+| Field | Required | Details |
+|-------|----------|---------|
+| **Title** | Yes | 12–80 characters. Placeholder: `"Enter feature title (12–80 characters)"` |
+| **Description** | Yes | 40–480 characters. Placeholder: `"Describe the feature... (40–480 characters)"` |
+| **Status** | Owner only | Five-tab picker: Pending, Voting, Planned, In Dev, Shipped |
+| **Expected delivery** | Owner only | Shown when status is Planned or In Dev — pick a month/quarter and year |
+
+Click **Cancel** to close without saving, or **Submit** to create the feature. While submitting, the button shows **Submitting…**.
+
+<Check>
+  The creator automatically receives one vote on the new feature.
+</Check>
+
+## Owner vs visitor flow
+
+<AccordionGroup>
+  <Accordion title="Owner (dashboard)">
+    You see the full **Status** picker and can set any status including **Pending**. When status is **Planned** or **In Dev**, you can set an **Expected delivery** date. The dialog closes immediately on success.
+  </Accordion>
+  <Accordion title="Visitor (public portal)">
+    Visitors must sign in before submitting. Unsigned users see a **Please sign up** prompt.
+
+    There is no status picker — the initial status depends on your **Open for voting** setting in Controls:
+
+    - **Open for voting ON** → status is **Open for voting**; the feature appears on the public board immediately
+    - **Open for voting OFF** → status is **Pending**; the feature is hidden until you review it
+
+    After submitting, visitors see a thank-you message:
+
+    - If open for voting: *"Your idea is live on the board — others can vote on it now."*
+    - If pending: *"Your idea has been received. We'll review it shortly..."*
+  </Accordion>
+</AccordionGroup>
+
+## Expected delivery
+
+When you set a feature to **Planned** or **In Dev**, an **Expected delivery** field appears:
+
+- **Month or quarter** — January through December, or Q1–Q4
+- **Year** — current year through five years ahead
+
+This date is shown on the feature card and detail page to set customer expectations.
+
+## Next
+
+Continue to [Editing a feature](/2-manage-content/02-editing-a-feature) to update title, description, status, and expected delivery after a feature is created.

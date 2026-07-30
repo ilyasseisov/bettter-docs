@@ -1,0 +1,76 @@
+---
+title: "Widget"
+description: "Embed an interactive widget on your website with a trigger button and configurable sections."
+sidebarTitle: "7. Widget"
+icon: "code"
+keywords: ["bettter", "widget", "embed", "script"]
+---
+
+The embeddable widget lets visitors access your feature board, roadmap, changelog, and support form directly from your website — without navigating to your portal URL.
+
+<Info>
+  The embeddable widget is available on paid plans (Basic, Pro, or Max). Free users see: *"The embeddable widget is available on paid plans (basic, pro, or max)."* Widget configuration requires an existing project.
+</Info>
+
+Open the **Widget** accordion in the project settings panel.
+
+## Trigger
+
+The button visitors click on your website to open the widget.
+
+- **Description:** The button visitors click on your website to open the widget
+- **Position:** Left | Right (default: Right)
+- **Text:** Default `"What's new"` (max 40 characters)
+- **Colors:** Uses your project brand color with automatic contrast for readable text
+
+## Sidebar position
+
+Choose where the widget panel slides in from:
+
+- **Left** or **Right** (default: Right)
+
+## Sections
+
+Choose which sections appear in the widget sidebar. All default to ON:
+
+- **Features**
+- **Roadmap**
+- **Changelog**
+- **Support**
+
+At least one section must be enabled before you can publish the widget.
+
+## Install script
+
+<Steps>
+  <Step title="Copy the code">
+    Copy the embed script from the **Install script** section:
+
+    ```html
+    <script async src="https://bettter.app/embed/v1.js" data-widget-id="{widgetId}"></script>
+    ```
+  </Step>
+  <Step title="Paste into your site">
+    Add the script to your website or app HTML.
+  </Step>
+  <Step title="Test the connection">
+    Click **Test connection**, then reload your website. Bettter shows **Connected** or **Not connected**.
+  </Step>
+</Steps>
+
+<Note>
+  **Important!** Reload your website where you've installed the widget code. This step is required to activate the widget.
+</Note>
+
+## Publish and branding
+
+| Switch | Description |
+|--------|-------------|
+| **Publish widget** | Makes the widget visible to visitors after install is verified. Unpublish to hide instantly while keeping the script in place. Disabled until connected — helper: *Install and test the script first* |
+| **Hide Bettter branding** | Hides the Powered by Bettter footer from visitors. The Bettter homepage link remains in the page for SEO. |
+
+Pending features are hidden from the widget Features section, same as the public portal.
+
+## Next
+
+Continue to [Email notifications](/3-configure/08-email-notifications) to get alerted about new features, comments, and status changes.

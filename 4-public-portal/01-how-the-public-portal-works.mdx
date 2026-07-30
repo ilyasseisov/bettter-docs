@@ -1,0 +1,83 @@
+---
+title: "How the public portal works"
+description: "Your portal at slug.bettter.app or a custom domain — branded chrome, tabs, search, and disabled sections."
+sidebarTitle: "1. How the public portal works"
+icon: "globe"
+keywords: ["bettter", "public portal", "subdomain", "custom domain"]
+---
+
+The public portal is what your customers see when they visit your feedback board. Everything you configure in the dashboard — branding, tabs, controls — shapes this experience.
+
+## Portal address
+
+Your portal lives at one of these URLs:
+
+| Type | Example |
+|------|---------|
+| Default subdomain | `https://{slug}.bettter.app` |
+| Custom domain (verified) | `https://feedback.yourdomain.com` |
+
+Public routes (no slug prefix on subdomain or custom domain):
+
+| Tab | Route |
+|-----|-------|
+| Features | `/` |
+| Roadmap | `/roadmap` |
+| Changelog | `/changelog` |
+| Support | `/support` |
+| Feature detail | `/{cardSlug}` |
+
+Card slugs are 16-character hex strings assigned automatically when a feature is created.
+
+<Card title="Bettter demo portal" icon="external-link" href="https://bettter.bettter.app">
+  Explore a live example of the branded portal with all four tabs.
+</Card>
+
+## Branded chrome
+
+The portal applies your project branding automatically:
+
+| Element | Source |
+|---------|--------|
+| Light/dark theme | [Branding → Theme](/3-configure/03-branding) |
+| Brand color | [Branding → Brand color](/3-configure/03-branding) |
+| Font style | [Branding → Font style](/3-configure/03-branding) |
+| UI language | [Branding → UI language](/3-configure/03-branding) |
+| Logo + project name | Header left |
+| Website link badge | Shown when website URL is set in [SEO](/3-configure/02-seo) |
+
+## Tab navigation
+
+When [Show shared tabs](/3-configure/05-controls) is enabled, visitors see a navigation strip with your enabled tabs:
+
+- **Features** · **Roadmap** · **Changelog** · **Support**
+
+On mobile, tabs show icons only. On larger screens, they show text labels. The active tab is highlighted.
+
+Feature detail pages show the brand header but no tab navigation or search — only a **Back** link to the Features board.
+
+## Search
+
+Search is available on Features, Roadmap, and Changelog — not on Support or feature detail pages.
+
+- Open/close via the search icon (**Open search** / **Close search**)
+- Placeholder: **Search...**
+- Filters title and description on Features and Roadmap; filters changelog entries on Changelog
+- Closes automatically when navigating to another page
+
+## Disabled tabs
+
+When you turn off a tab in [Controls](/3-configure/05-controls):
+
+- The tab disappears from navigation
+- Direct URLs still load but show: **The page is disabled by app owner ({projectName})**
+
+When **Show shared tabs** is off, the entire navigation strip is hidden. Pages remain reachable by direct URL.
+
+## Owner preview
+
+Open your portal from the dashboard using **Open public portal** in the project header, or the external-link icon on the project card at `/dashboard`. Both open `{slug}.bettter.app` in a new tab.
+
+## Next
+
+Continue to [What visitors can do](/4-public-portal/02-what-visitors-can-do) for a breakdown of visitor capabilities and sign-in requirements.

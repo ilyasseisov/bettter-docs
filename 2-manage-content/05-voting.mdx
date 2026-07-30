@@ -1,0 +1,55 @@
+---
+title: "Voting"
+description: "Let signed-in users vote on feature requests from the board and detail page."
+sidebarTitle: "5. Voting"
+icon: "thumbs-up"
+keywords: ["bettter", "voting", "upvote", "feature board"]
+---
+
+Voting helps you prioritize feature requests by showing which ideas your users care about most. Signed-in users can upvote features on the board and on individual card detail pages.
+
+## Open for voting setting
+
+The **Open for voting** toggle lives in project settings under [Controls](/3-configure/05-controls):
+
+> If active, then newly suggested features from your users will be immediately available for public view and voting. Otherwise, the status will be set as "Pending" and will proceed for your moderation.
+
+<Info>
+  **Open for voting** controls the **initial status** of visitor suggestions — not whether vote buttons appear. Vote buttons are shown on all visible (non-pending) features for signed-in users.
+</Info>
+
+| Setting | New visitor suggestion | Public visibility |
+|---------|------------------------|-------------------|
+| ON | Open for voting | Live on board immediately |
+| OFF | Pending | Hidden until you change status |
+
+See [Creating a feature](/2-manage-content/01-creating-a-feature) for the full suggest flow.
+
+## Where users can vote
+
+| Surface | Voting |
+|---------|--------|
+| Features board | Yes — upvote button on each card |
+| Feature detail page | Yes — same upvote control |
+| Roadmap | No — vote buttons are hidden on roadmap cards |
+
+## How voting works
+
+- Click the upvote button to add a vote (`aria-label`: **Upvote**)
+- Click again to remove your vote (`aria-label`: **Remove upvote**)
+- Confirmation messages: **Vote added!** or **Vote removed!**
+- The feature creator automatically receives one vote when the feature is created
+
+## Sign-in required
+
+Visitors must be signed in to vote on the public portal. Unsigned users who try to vote see a **Sign in to continue** dialog.
+
+On the server, unsigned vote attempts return **"Unauthorized. Please sign in to vote."**
+
+## Sorting by votes
+
+On the Features board, sort cards by **Most voted** or **Least votes** to surface popular requests at the top.
+
+## Next
+
+Continue to [Comments](/2-manage-content/06-comments) to enable discussion on feature detail pages.

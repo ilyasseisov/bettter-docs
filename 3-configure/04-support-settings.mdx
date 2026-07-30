@@ -1,0 +1,40 @@
+---
+title: "Support settings"
+description: "Set the support email and descriptive message for your public support form."
+sidebarTitle: "4. Support settings"
+icon: "mail"
+keywords: ["bettter", "support", "email", "contact form"]
+---
+
+Support settings determine where visitor tickets are delivered and what message appears above the support form. Open the **Support** accordion in the project settings panel.
+
+## Fields
+
+| Field | Label | Placeholder | Helper |
+|-------|-------|-------------|--------|
+| Email | **Email** | `support@example.com` | Optional |
+| Descriptive message | **Descriptive message** | How visitors can reach you or what to expect | Optional |
+
+## Validation
+
+| Field | Rule | Error |
+|-------|------|-------|
+| Email (if set) | Valid email format | Please enter a valid email address |
+| Descriptive message (if set) | Max 2000 characters | Descriptive message must be 2000 characters or less |
+
+## Enabling the Support tab
+
+Although the email field is labeled optional, a **valid support email is required** to enable the Support tab on your public portal.
+
+- The **Support** toggle in **Controls** is blocked until a valid email is entered
+- If email is empty or invalid when you save, the Support tab is forced off even if the toggle was on
+
+See [Receiving support tickets](/2-manage-content/11-receiving-support-tickets) for how tickets are delivered and what the public form looks like.
+
+## Descriptive message on the portal
+
+When set, the descriptive message appears above the support form on `{slug}.bettter.app/support`. Use it to set expectations — for example response times or what information visitors should include.
+
+## Next
+
+Continue to [Controls](/3-configure/05-controls) to configure tab visibility, voting moderation, comments, and navigation.

@@ -1,0 +1,86 @@
+---
+title: "What visitors can do"
+description: "Browse features, roadmap, and changelog; submit support tickets; suggest, vote, and comment when enabled."
+sidebarTitle: "2. What visitors can do"
+icon: "users"
+keywords: ["bettter", "visitors", "public portal", "vote", "comment"]
+---
+
+Visitors interact with your portal without needing an account for most actions. Signing in unlocks suggesting features, voting, and commenting.
+
+## Browse without signing in
+
+| Tab | What visitors can do |
+|-----|---------------------|
+| **Features** | View the board (no pending cards), filter by status, sort, search, open card detail |
+| **Roadmap** | View Planned / In Development / Shipped columns, search, use mobile section tabs |
+| **Changelog** | Read entries, filter by search |
+| **Support** | Submit a contact form with optional bug report and screenshots |
+| **Card detail** | Read feature description, vote counts, and existing comments |
+
+**Pending features** are never visible on the public portal — not on the board, roadmap, search, or direct URLs.
+
+## Features board
+
+**Page title:** Features
+
+**Status filters:** All, Open for voting, Planned, In development, Shipped (no Pending option)
+
+**Sort options:** Most voted, Least votes, Newest, Oldest
+
+**Empty states:**
+- No cards: *"Be the first to suggest a new feature for this project"*
+- Filter empty: *"Try selecting a different status filter."*
+- Search empty: *"Try a different search term."*
+
+Vote buttons are visible on all non-pending cards. Clicking without signing in opens an auth dialog.
+
+## Actions that require sign-in
+
+| Action | Sign-in | Additional requirement |
+|--------|---------|------------------------|
+| Browse features, roadmap, changelog | No | Pending hidden |
+| Search | No | — |
+| Open card detail | No | Pending → 404 |
+| Read comments | No | — |
+| Submit support ticket | No | Support email configured |
+| Suggest feature | **Yes** | — |
+| Vote | **Yes** | — |
+| Post comment | **Yes** | [Comments](/3-configure/05-controls) toggle ON |
+| Like / delete own comment | **Yes** | — |
+
+## Suggest a feature
+
+Click **Suggest new feature**:
+
+- **Unsigned:** dialog titled **Please sign up** — *"Sign in or create an account to suggest features and vote."*
+- **Signed in:** **Suggest new feature** dialog with Title and Description
+
+After submitting:
+- **Open for voting ON:** *"Your idea is live on the board — others can vote on it now."*
+- **Open for voting OFF:** *"Your idea has been received. We'll review it shortly..."*
+
+See [Creating a feature](/2-manage-content/01-creating-a-feature) for field requirements.
+
+## Vote and comment
+
+- **Vote:** Upvote button on board and detail page. Unsigned users see **Sign in to continue** on detail pages.
+- **Comment:** Available on card detail pages when Comments is enabled. Compose box hidden when disabled; existing comments remain visible.
+
+## Roadmap and changelog
+
+The public **Roadmap** is read-only — no drag-and-drop. Vote buttons are hidden; vote counts still display.
+
+The public **Changelog** is read-only. Entry type badges: **New**, **Fix**, **Improvement**.
+
+## Support
+
+No sign-in required. Form fields: Your Name, Your Email, Subject, Message, optional Screenshots, and **Reporting a bug?** toggle.
+
+If support email is not configured, visitors see a warning that tickets cannot be sent until the owner adds one.
+
+See [Receiving support tickets](/2-manage-content/11-receiving-support-tickets) for delivery details.
+
+## Next
+
+Continue to [Signing in on the portal](/4-public-portal/03-signing-in-on-the-portal) to understand the authentication flow.

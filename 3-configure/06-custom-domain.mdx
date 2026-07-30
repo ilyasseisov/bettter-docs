@@ -1,0 +1,64 @@
+---
+title: "Custom domain"
+description: "Connect a custom hostname like feedback.yourdomain.com and verify DNS."
+sidebarTitle: "6. Custom domain"
+icon: "globe"
+keywords: ["bettter", "custom domain", "dns", "cname"]
+---
+
+A custom domain lets visitors reach your portal at your own hostname — for example `feedback.acme.com` — instead of `{slug}.bettter.app`.
+
+<Info>
+  Custom domains are available on paid plans (Basic, Pro, or Max). Free users see: *"Custom domains are available on paid plans (basic, pro, or max)."* with an upgrade option.
+</Info>
+
+Open the **Custom domain** accordion in the project settings panel. Custom domain configuration requires an existing project — it is disabled during initial project creation.
+
+## Hostname
+
+- **Label:** Hostname
+- **Placeholder:** `feedback.acme.com`
+- **Validation:** Must be a valid FQDN with at least three labels (subdomain required). No protocol or trailing dot.
+
+Examples: `feedback.acme.com` (valid), `acme.com` (invalid — needs a subdomain).
+
+## DNS configuration
+
+After saving your hostname, Bettter shows a **DNS configuration** section:
+
+> Add a CNAME record pointing {yourDomain} to cname.bettter.app.
+
+| Type | Name | Target |
+|------|------|--------|
+| CNAME | First label of your domain (e.g. `feedback`) | `cname.bettter.app` |
+
+<Warning>
+  **Important!** This can take up to 3 minutes to connect your domain. DNS changes can take up to 48 hours to propagate globally.
+</Warning>
+
+## Verification status
+
+Bettter polls DNS automatically and shows a status badge:
+
+| Badge | Meaning |
+|-------|---------|
+| connection successful | Domain verified and active |
+| connection unsuccessful | DNS not yet correct |
+
+While unverified, you may see: *Checking again automatically in {N}s...*
+
+Common connection issues:
+
+- **No CNAME record detected** — Add a CNAME at your DNS provider pointing to `cname.bettter.app`
+- **Wrong target** — Update the CNAME to point to `cname.bettter.app`
+- **Propagating** — DNS changes can take up to 48 hours
+
+## Remove custom domain
+
+Click remove to open the **Remove custom domain** dialog. Confirm with **Yes** (shows **Removing…** while in progress).
+
+Changing the hostname may cause the previous domain to return 404 until DNS is updated.
+
+## Next
+
+Continue to [Widget](/3-configure/07-widget) to embed your portal on your own website (paid plans).
